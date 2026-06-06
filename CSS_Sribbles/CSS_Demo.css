@@ -1,0 +1,618 @@
+/* 
+Challenge:
+Re-design the cookie widget!
+PS: Make sure you change ALL of the listed CSS properties.
+*/
+
+body {
+    background: blue;     /* red, blue, yellow, etc */
+    color: lightgreen;             /* red, blue, yellow, etc */
+    font-size: 30px;        /* 0px - 100px and beyond */
+    font-weight: bold;   /* lighter, normal, bold  */
+    text-align: center;      /* left, center or right  */ 
+    margin-top: 12px;        /* From 0px and upwards   */
+}
+-----------------------------------------------------------
+Link to the CSS in HTML:
+<html>
+    <head>    
+    <!-- 
+    Challenge: Link to the CSS file!
+    Hint: google it ;)
+     -->
+     <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img src="google.png" />
+        <input type="text" />
+    </body>
+</html>
+------------------------------------------------------------
+Width of elements:
+/*
+Challenge:
+Select the img tag and set the width 
+of the Google logo to be 300px.
+*/
+
+input {
+    width: 400px;
+}
+
+img{
+    width: 300px;
+}
+-----------------------------------------------------------
+Inline vs Block elements
+/*
+Challenge: 
+Turn the elements into blocks!
+*/
+
+img {
+    display: block;
+    width: 300px;
+}
+
+input {
+    display: block;
+    width: 400px;
+}
+
+html :
+<html>
+    <head>    
+     <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <img src="google.png" />
+        <input type="text" />
+    </body>
+</html>
+----------------------------------------------------------
+Margin Top 
+img {
+    /* Challenge: 
+    Add some space (margin) above our image!
+    Do you remember how we added spacing in the 
+    cookie widget example?
+    */
+    margin-top:30px ;
+    display: block;
+    width: 300px;
+}
+
+
+input {
+    display: block;
+    width: 400px;
+}
+--------------------------------------------------------------
+CSS Classes: 
+
+styles.css
+.main {
+    margin-top: 100px;
+}
+
+/* Challenge - part 2: 
+Replace the element selectors with class selectors */
+.logo-img {
+    display: block;
+    width: 300px;
+}
+
+.text-section {
+    display: block;
+    width: 400px;
+}
+
+index.html
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <!-- Challenge - part 1: 
+            Add a class to each of these two elements -->
+      
+            <img class="logo-img" src="google.png" />
+  
+       
+            <input class="text-section" type="text" />
+     
+        </div>  
+    </body>
+</html>
+---------------------------------------------------------------
+Margins via flags:   
+index.html
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+    </body>
+</html>
+
+style.css
+body {
+    margin:0;
+}
+
+.red {
+    background: #c71226;
+    height: 100px;
+    /*Challenge:
+    Add 100px of margin on the bottom of the red box. */
+    margin-bottom:  100px;
+}
+
+.blue {
+    background: #0d1b88;
+    height: 100px;
+}
+
+.green {
+    background: #397327;
+    height: 100px;
+}
+
+-------------------------------------------------------------
+body {
+    margin:0;
+}
+
+.red {
+    background: #c71226;
+    height: 100px;
+}
+
+.blue {
+    background: #0d1b88;
+    height: 100px;
+    /* Challenge: 
+    Create the flag of The Gambia.
+    But only by applying styles to the blue box! */
+    margin-top: 25px;
+    margin-bottom:25px;
+}
+
+.green {
+    background: #397327;
+    height: 100px;
+}
+
+----------------------------------------------------------
+Add space between elements
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <img class="logo-img" src="google.png" />
+            <input class="search-input" type="text" />
+        </div>
+    </body>
+</html>
+------ 
+/*
+Challenge: 
+Add some space between the logo 
+and the search field.
+
+What are the two different ways 
+we can do this with margins?
+
+*/
+
+.main {
+    margin-top: 100px;    
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+}
+---------------------------------------------
+Centering our content: 
+
+/*
+Challenge:
+Center the logo and the search field.
+*/
+.main {
+    margin-top: 100px;    
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+-----------------------------------------------------------------------
+Padding 
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        
+        <div class="card">
+            
+            A purely peer-to-peer version of electronic cash would allow online
+            payments to be sent directly from one party to another without going through a
+            financial institution. Digital signatures provide part of the solution, but the main
+            benefits are lost if a trusted third party is still required to prevent double-spending.  
+                  
+        </div> 
+           
+    </body>
+</html>
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /*
+    Challenge:
+    Add padding to make our card look like
+    the provided design */
+    padding-top: 100px;
+    padding-right: 100px;
+}
+-------------------------------------------------------------------------
+Border and border radius 
+.card {
+    color: #222222;
+    background: lightgray;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Challenge:
+    Change the values to match the design
+    in the slide */
+    border: 4px solid #222222;
+    border-radius: 20px;
+    
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+------------------------------------------------------------------------------
+Style Twitter Button 
+<html>
+    <head>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <button>Following</button>
+    </body>
+</html>
+-------
+/* 
+Challenge: 
+Make the button look like Twitter's "Following" button!
+(Except for the font)
+
+Hints:
+border color: #cfd9de
+text color: #0f1419
+Remember the font-weight!
+*/
+button{
+    background:white;
+    font-weight: bold;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color:#0f1419; /*text color*/
+    border-radius: 20px;
+    border:1px solid #cfd9de;
+    
+    
+    
+    
+    
+    
+}
+-------------------------------------------------------------------
+Fix the input field in Google search bar 
+
+
+
+.main {
+    margin-top: 100px;    
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    /*
+    Challenge: 
+    Design the search field according to the spec
+    */
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    
+    
+}
+
+-----------------------------------------------------------------------
+Center the button 
+.main {
+    margin-top: 100px;    
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+/*
+Challenge:
+Center the button and add some space above it
+*/
+.btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+----------------------------------------------------------
+Style the button 
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <img class="logo-img" src="google.png" />
+            <input class="search-input" type="text" />
+            <button class="btn">Google Search</button>
+        </div>
+    </body>
+</html>
+.main {
+    margin-top: 100px;    
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+    /*
+    Challenge:
+    Style the button according to the provided design.
+    Hint: Use padding, font-size, border-radius, border, and background
+    
+    PS: 
+    The real background is #f8f9fa but it is failing our contrast check. 
+    So here's the background color we will use: #dfe1e5
+    */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #dfe1e5;
+    font-size: 14px;
+    border:none;
+    border-radius: 4px;
+    
+}
+--------------------------------------------------------------------
+Why we can't have 2 block level buttons 
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <img class="logo-img" src="google.png" />
+            <input class="search-input" type="text" />
+            <button class="btn">Google Search</button>
+            <!--
+            Challenge:
+            Add the next button.
+            
+            Why aren't our buttons behaving as we want them to?
+            -->
+            <button class="btn">I'm Feeling Lucky</button>
+        </div>
+    </body>
+</html>
+
+.main {
+    margin-top: 100px;    
+    text-align: center;
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+.btn {
+    
+    
+    margin-top: 30px;
+    background: #dfe1e5;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+-----------------------------------------------------------
+Centering both buttons with flexbox
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="main">
+            <img class="logo-img" src="google.png" />
+            <input class="search-input" type="text" />
+            <div class="btn-wrapper">
+                <button class="btn">Google Search</button>
+                <button class="btn">I'm Feeling Lucky</button>
+            </div>
+        </div>
+    </body>
+</html>
+/*
+Challenge:
+Wrap the buttons in a flexbox div and center them.
+Give the div a "btn-wrapper" class.
+*/
+
+.main {
+    margin-top: 100px;    
+}
+
+.logo-img {
+    display: block;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search-input {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 30px;
+    background: #dfe1e5;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+
+
+
+
